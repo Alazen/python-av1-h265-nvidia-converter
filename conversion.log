@@ -1,0 +1,649 @@
+2025-07-15 21:55:37,603 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mkv with AV1 (av1_nvenc)...
+2025-07-15 21:55:37,635 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: Error running command ['ffmpeg', '-i', 'C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4', '-preset', 'veryfast', '-b:v', '5000k', '-c:a', 'copy', '-c:v', 'av1_nvenc', 'C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\\Google Workspace - Introducing Google Vids_converted.mkv']: ffmpeg version 7.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+libavutil      59. 39.100 / 59. 39.100
+libavcodec     61. 19.101 / 61. 19.101
+libavformat    61.  7.100 / 61.  7.100
+libavdevice    61.  3.100 / 61.  3.100
+libavfilter    10.  4.100 / 10.  4.100
+libswscale      8.  3.100 /  8.  3.100
+libswresample   5.  3.100 /  5.  3.100
+libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4':
+Metadata:
+major_brand     : isom
+minor_version   : 512
+compatible_brands: isomiso2mp41
+encoder         : Lavf61.1.100
+Duration: 00:01:26.77, start: 0.000000, bitrate: 6612 kb/s
+Stream #0:0[0x1](und): Video: vp9 (Profile 0) (vp09 / 0x39307076), yuv420p(tv, bt709), 3840x2160, 6480 kb/s, 29.97 fps, 29.97 tbr, 16k tbn (default)
+Metadata:
+handler_name    : ISO Media file produced by Google Inc. Created on: 07/12/2025.
+vendor_id       : [0][0][0][0]
+Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+Metadata:
+handler_name    : ISO Media file produced by Google Inc.
+vendor_id       : [0][0][0][0]
+[av1_nvenc @ 0000023fe4162a40] [Eval @ 00000091f5dfd1c0] Undefined constant or missing '(' in 'veryfast'
+[av1_nvenc @ 0000023fe4162a40] Unable to parse option value "veryfast"
+[av1_nvenc @ 0000023fe4162a40] Error setting option preset to value veryfast.
+[vost#0:0/av1_nvenc @ 0000023fe41626c0] Error applying encoder options: Invalid argument
+Error opening output file C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mkv.
+Error opening output files: Invalid argument
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2025-07-15 21:56:14,604 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4 with AV1 (av1_nvenc)...
+2025-07-15 21:56:35,529 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4
+2025-07-15 21:56:49,601 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:56:56,883 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:57:07,763 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:57:27,543 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:57:31,920 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:57:36,653 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:57:50,271 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mkv with AV1 (av1_nvenc)...
+2025-07-15 21:57:52,750 - INFO - Conversion cancelled by user.
+2025-07-15 21:57:55,663 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 21:58:02,929 - INFO - Error converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4: name 'time' is not defined
+2025-07-15 22:01:06,451 - INFO - Added 1 dropped files.
+2025-07-15 22:01:18,342 - INFO - Using preset 'fast' for encoder 'hevc_nvenc'
+2025-07-15 22:01:18,342 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4 with H.265 (hevc_nvenc)...
+2025-07-15 22:01:27,988 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4
+2025-07-15 22:01:34,423 - INFO - Using preset 'medium' for encoder 'hevc_nvenc'
+2025-07-15 22:01:34,425 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627694.mp4 with H.265 (hevc_nvenc)...
+2025-07-15 22:01:53,352 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627694.mp4
+2025-07-15 22:02:03,642 - INFO - Using preset 'slow' for encoder 'hevc_nvenc'
+2025-07-15 22:02:03,642 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627723.mp4 with H.265 (hevc_nvenc)...
+2025-07-15 22:03:08,128 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627723.mp4
+2025-07-15 22:04:26,246 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:04:26,247 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:04:39,082 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4
+2025-07-15 22:04:52,558 - INFO - Using preset 'medium' for encoder 'av1_nvenc'
+2025-07-15 22:04:52,560 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627892.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:05:13,244 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627892.mp4
+2025-07-15 22:05:22,111 - INFO - Using preset 'slow' for encoder 'av1_nvenc'
+2025-07-15 22:05:22,112 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752627922.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:05:55,828 - INFO - Conversion cancelled by user.
+2025-07-15 22:06:19,065 - INFO - Added 1 dropped files.
+2025-07-15 22:06:26,315 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:06:26,316 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:06:26,327 - INFO - Progress update: 0%
+2025-07-15 22:06:26,871 - INFO - Progress update: 1.19%
+2025-07-15 22:06:27,387 - INFO - Progress update: 4.75%
+2025-07-15 22:06:27,901 - INFO - Progress update: 9.36%
+2025-07-15 22:06:28,414 - INFO - Progress update: 13.98%
+2025-07-15 22:06:28,945 - INFO - Progress update: 18.6%
+2025-07-15 22:06:29,461 - INFO - Progress update: 22.16%
+2025-07-15 22:06:29,991 - INFO - Progress update: 26.79%
+2025-07-15 22:06:30,507 - INFO - Progress update: 31.4%
+2025-07-15 22:06:31,023 - INFO - Progress update: 36.02%
+2025-07-15 22:06:31,542 - INFO - Progress update: 39.6%
+2025-07-15 22:06:32,058 - INFO - Progress update: 44.2%
+2025-07-15 22:06:32,576 - INFO - Progress update: 48.81%
+2025-07-15 22:06:33,093 - INFO - Progress update: 52.37%
+2025-07-15 22:06:33,611 - INFO - Progress update: 56.99%
+2025-07-15 22:06:34,130 - INFO - Progress update: 61.6%
+2025-07-15 22:06:34,647 - INFO - Progress update: 65.16%
+2025-07-15 22:06:35,150 - INFO - Progress update: 69.72%
+2025-07-15 22:06:35,678 - INFO - Progress update: 74.36%
+2025-07-15 22:06:36,194 - INFO - Progress update: 79.0%
+2025-07-15 22:06:36,696 - INFO - Progress update: 82.54%
+2025-07-15 22:06:37,213 - INFO - Progress update: 87.15%
+2025-07-15 22:06:37,733 - INFO - Progress update: 90.71%
+2025-07-15 22:06:38,246 - INFO - Progress update: 95.32%
+2025-07-15 22:06:38,772 - INFO - Progress update: 99.96%
+2025-07-15 22:06:38,803 - INFO - Progress update: 99.99%
+2025-07-15 22:06:38,950 - INFO - Progress update: 100%
+2025-07-15 22:06:38,951 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4
+2025-07-15 22:06:53,184 - INFO - Using preset 'medium' for encoder 'av1_nvenc'
+2025-07-15 22:06:53,185 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628013.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:06:53,191 - INFO - Progress update: 0%
+2025-07-15 22:06:53,727 - INFO - Progress update: 0.08%
+2025-07-15 22:06:54,244 - INFO - Progress update: 3.52%
+2025-07-15 22:06:54,773 - INFO - Progress update: 5.88%
+2025-07-15 22:06:55,289 - INFO - Progress update: 8.22%
+2025-07-15 22:06:55,805 - INFO - Progress update: 10.57%
+2025-07-15 22:06:56,322 - INFO - Progress update: 13.98%
+2025-07-15 22:06:56,838 - INFO - Progress update: 16.34%
+2025-07-15 22:06:57,354 - INFO - Progress update: 18.63%
+2025-07-15 22:06:57,871 - INFO - Progress update: 21.0%
+2025-07-15 22:06:58,387 - INFO - Progress update: 24.41%
+2025-07-15 22:06:58,904 - INFO - Progress update: 26.74%
+2025-07-15 22:06:59,421 - INFO - Progress update: 29.1%
+2025-07-15 22:06:59,938 - INFO - Progress update: 31.46%
+2025-07-15 22:07:00,456 - INFO - Progress update: 34.86%
+2025-07-15 22:07:00,973 - INFO - Progress update: 37.21%
+2025-07-15 22:07:01,491 - INFO - Progress update: 39.6%
+2025-07-15 22:07:02,008 - INFO - Progress update: 43.0%
+2025-07-15 22:07:02,526 - INFO - Progress update: 45.33%
+2025-07-15 22:07:03,041 - INFO - Progress update: 46.58%
+2025-07-15 22:07:03,561 - INFO - Progress update: 49.98%
+2025-07-15 22:07:04,079 - INFO - Progress update: 52.32%
+2025-07-15 22:07:04,594 - INFO - Progress update: 53.55%
+2025-07-15 22:07:05,110 - INFO - Progress update: 56.93%
+2025-07-15 22:07:05,630 - INFO - Progress update: 59.29%
+2025-07-15 22:07:06,148 - INFO - Progress update: 61.64%
+2025-07-15 22:07:06,651 - INFO - Progress update: 64.0%
+2025-07-15 22:07:07,168 - INFO - Progress update: 67.39%
+2025-07-15 22:07:07,687 - INFO - Progress update: 69.75%
+2025-07-15 22:07:08,205 - INFO - Progress update: 72.11%
+2025-07-15 22:07:08,722 - INFO - Progress update: 75.53%
+2025-07-15 22:07:09,238 - INFO - Progress update: 77.88%
+2025-07-15 22:07:09,752 - INFO - Progress update: 80.23%
+2025-07-15 22:07:10,269 - INFO - Progress update: 82.6%
+2025-07-15 22:07:10,788 - INFO - Progress update: 85.99%
+2025-07-15 22:07:11,304 - INFO - Progress update: 88.36%
+2025-07-15 22:07:11,821 - INFO - Progress update: 90.66%
+2025-07-15 22:07:12,335 - INFO - Progress update: 93.01%
+2025-07-15 22:07:12,850 - INFO - Progress update: 95.33%
+2025-07-15 22:07:13,353 - INFO - Progress update: 97.69%
+2025-07-15 22:07:13,690 - INFO - Progress update: 99.99%
+2025-07-15 22:07:13,852 - INFO - Progress update: 100%
+2025-07-15 22:07:13,852 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628013.mp4
+2025-07-15 22:07:19,146 - INFO - Using preset 'slow' for encoder 'av1_nvenc'
+2025-07-15 22:07:19,147 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628039.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:07:19,153 - INFO - Progress update: 0%
+2025-07-15 22:07:19,686 - INFO - Progress update: 0.01%
+2025-07-15 22:07:20,202 - INFO - Progress update: 1.2%
+2025-07-15 22:07:20,718 - INFO - Progress update: 2.4%
+2025-07-15 22:07:21,233 - INFO - Progress update: 3.59%
+2025-07-15 22:07:21,750 - INFO - Progress update: 5.81%
+2025-07-15 22:07:22,267 - INFO - Progress update: 6.98%
+2025-07-15 22:07:22,786 - INFO - Progress update: 8.14%
+2025-07-15 22:07:23,303 - INFO - Progress update: 9.32%
+2025-07-15 22:07:23,816 - INFO - Progress update: 10.5%
+2025-07-15 22:07:24,331 - INFO - Progress update: 11.69%
+2025-07-15 22:07:24,847 - INFO - Progress update: 12.87%
+2025-07-15 22:07:25,362 - INFO - Progress update: 15.1%
+2025-07-15 22:07:25,880 - INFO - Progress update: 16.27%
+2025-07-15 22:07:26,395 - INFO - Progress update: 17.43%
+2025-07-15 22:07:26,907 - INFO - Progress update: 17.53%
+2025-07-15 22:07:27,425 - INFO - Progress update: 19.77%
+2025-07-15 22:07:27,942 - INFO - Progress update: 20.95%
+2025-07-15 22:07:28,457 - INFO - Progress update: 22.14%
+2025-07-15 22:07:28,974 - INFO - Progress update: 23.32%
+2025-07-15 22:07:29,477 - INFO - Progress update: 24.5%
+2025-07-15 22:07:30,006 - INFO - Progress update: 25.67%
+2025-07-15 22:07:30,522 - INFO - Progress update: 27.9%
+2025-07-15 22:07:31,037 - INFO - Progress update: 29.08%
+2025-07-15 22:07:31,554 - INFO - Progress update: 30.26%
+2025-07-15 22:07:32,074 - INFO - Progress update: 31.45%
+2025-07-15 22:07:32,587 - INFO - Progress update: 32.63%
+2025-07-15 22:07:33,102 - INFO - Progress update: 33.79%
+2025-07-15 22:07:33,617 - INFO - Progress update: 36.02%
+2025-07-15 22:07:34,146 - INFO - Progress update: 37.21%
+2025-07-15 22:07:34,663 - INFO - Progress update: 38.4%
+2025-07-15 22:07:35,180 - INFO - Progress update: 39.59%
+2025-07-15 22:07:35,697 - INFO - Progress update: 41.82%
+2025-07-15 22:07:36,223 - INFO - Progress update: 42.99%
+2025-07-15 22:07:36,741 - INFO - Progress update: 44.17%
+2025-07-15 22:07:37,255 - INFO - Progress update: 45.33%
+2025-07-15 22:07:37,768 - INFO - Progress update: 46.5%
+2025-07-15 22:07:38,286 - INFO - Progress update: 47.65%
+2025-07-15 22:07:38,800 - INFO - Progress update: 48.84%
+2025-07-15 22:07:39,315 - INFO - Progress update: 50.02%
+2025-07-15 22:07:39,831 - INFO - Progress update: 51.18%
+2025-07-15 22:07:40,346 - INFO - Progress update: 52.34%
+2025-07-15 22:07:40,860 - INFO - Progress update: 53.48%
+2025-07-15 22:07:41,378 - INFO - Progress update: 54.67%
+2025-07-15 22:07:41,896 - INFO - Progress update: 55.84%
+2025-07-15 22:07:42,409 - INFO - Progress update: 57.01%
+2025-07-15 22:07:42,923 - INFO - Progress update: 58.19%
+2025-07-15 22:07:43,440 - INFO - Progress update: 60.42%
+2025-07-15 22:07:43,954 - INFO - Progress update: 61.59%
+2025-07-15 22:07:44,472 - INFO - Progress update: 62.77%
+2025-07-15 22:07:44,986 - INFO - Progress update: 63.96%
+2025-07-15 22:07:45,502 - INFO - Progress update: 65.14%
+2025-07-15 22:07:46,018 - INFO - Progress update: 66.3%
+2025-07-15 22:07:46,533 - INFO - Progress update: 67.49%
+2025-07-15 22:07:47,046 - INFO - Progress update: 69.71%
+2025-07-15 22:07:47,562 - INFO - Progress update: 70.9%
+2025-07-15 22:07:48,077 - INFO - Progress update: 72.08%
+2025-07-15 22:07:48,596 - INFO - Progress update: 73.27%
+2025-07-15 22:07:49,111 - INFO - Progress update: 74.46%
+2025-07-15 22:07:49,627 - INFO - Progress update: 76.69%
+2025-07-15 22:07:50,144 - INFO - Progress update: 77.86%
+2025-07-15 22:07:50,661 - INFO - Progress update: 79.05%
+2025-07-15 22:07:51,174 - INFO - Progress update: 80.21%
+2025-07-15 22:07:51,691 - INFO - Progress update: 81.39%
+2025-07-15 22:07:52,208 - INFO - Progress update: 82.58%
+2025-07-15 22:07:52,724 - INFO - Progress update: 84.81%
+2025-07-15 22:07:53,238 - INFO - Progress update: 85.97%
+2025-07-15 22:07:53,756 - INFO - Progress update: 87.17%
+2025-07-15 22:07:54,272 - INFO - Progress update: 88.34%
+2025-07-15 22:07:54,787 - INFO - Progress update: 89.49%
+2025-07-15 22:07:55,306 - INFO - Progress update: 90.66%
+2025-07-15 22:07:55,820 - INFO - Progress update: 91.84%
+2025-07-15 22:07:56,322 - INFO - Progress update: 93.0%
+2025-07-15 22:07:56,838 - INFO - Progress update: 94.17%
+2025-07-15 22:07:57,367 - INFO - Progress update: 95.35%
+2025-07-15 22:07:57,882 - INFO - Progress update: 97.6%
+2025-07-15 22:07:58,393 - INFO - Progress update: 98.78%
+2025-07-15 22:07:58,871 - INFO - Progress update: 99.99%
+2025-07-15 22:07:59,037 - INFO - Progress update: 100%
+2025-07-15 22:07:59,038 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628039.mp4
+2025-07-15 22:09:49,787 - INFO - Added 1 dropped files.
+2025-07-15 22:09:52,898 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:09:52,898 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:09:52,903 - INFO - GUI progress set to 0%
+2025-07-15 22:09:52,904 - INFO - Progress update: 0.00%
+2025-07-15 22:09:53,434 - INFO - GUI progress set to 1%
+2025-07-15 22:09:53,435 - INFO - Progress update: 1.19%
+2025-07-15 22:09:53,948 - INFO - GUI progress set to 4%
+2025-07-15 22:09:53,949 - INFO - Progress update: 4.76%
+2025-07-15 22:09:54,464 - INFO - GUI progress set to 9%
+2025-07-15 22:09:54,464 - INFO - Progress update: 9.36%
+2025-07-15 22:09:54,982 - INFO - GUI progress set to 13%
+2025-07-15 22:09:54,982 - INFO - Progress update: 13.99%
+2025-07-15 22:09:55,498 - INFO - GUI progress set to 18%
+2025-07-15 22:09:55,499 - INFO - Progress update: 18.59%
+2025-07-15 22:09:56,013 - INFO - GUI progress set to 22%
+2025-07-15 22:09:56,014 - INFO - Progress update: 22.16%
+2025-07-15 22:09:56,525 - INFO - GUI progress set to 26%
+2025-07-15 22:09:56,526 - INFO - Progress update: 26.78%
+2025-07-15 22:09:57,045 - INFO - GUI progress set to 31%
+2025-07-15 22:09:57,047 - INFO - Progress update: 31.40%
+2025-07-15 22:09:57,562 - INFO - GUI progress set to 34%
+2025-07-15 22:09:57,563 - INFO - Progress update: 34.96%
+2025-07-15 22:09:58,080 - INFO - GUI progress set to 39%
+2025-07-15 22:09:58,081 - INFO - Progress update: 39.58%
+2025-07-15 22:09:58,595 - INFO - GUI progress set to 44%
+2025-07-15 22:09:58,596 - INFO - Progress update: 44.20%
+2025-07-15 22:09:59,107 - INFO - GUI progress set to 48%
+2025-07-15 22:09:59,108 - INFO - Progress update: 48.79%
+2025-07-15 22:09:59,623 - INFO - GUI progress set to 52%
+2025-07-15 22:09:59,624 - INFO - Progress update: 52.36%
+2025-07-15 22:10:00,138 - INFO - GUI progress set to 56%
+2025-07-15 22:10:00,139 - INFO - Progress update: 56.96%
+2025-07-15 22:10:00,654 - INFO - GUI progress set to 61%
+2025-07-15 22:10:00,654 - INFO - Progress update: 61.59%
+2025-07-15 22:10:01,168 - INFO - GUI progress set to 65%
+2025-07-15 22:10:01,169 - INFO - Progress update: 65.14%
+2025-07-15 22:10:01,684 - INFO - GUI progress set to 68%
+2025-07-15 22:10:01,684 - INFO - Progress update: 68.65%
+2025-07-15 22:10:02,201 - INFO - GUI progress set to 73%
+2025-07-15 22:10:02,202 - INFO - Progress update: 73.26%
+2025-07-15 22:10:02,714 - INFO - GUI progress set to 77%
+2025-07-15 22:10:02,715 - INFO - Progress update: 77.89%
+2025-07-15 22:10:03,232 - INFO - GUI progress set to 82%
+2025-07-15 22:10:03,233 - INFO - Progress update: 82.50%
+2025-07-15 22:10:03,746 - INFO - GUI progress set to 86%
+2025-07-15 22:10:03,747 - INFO - Progress update: 86.06%
+2025-07-15 22:10:04,265 - INFO - GUI progress set to 90%
+2025-07-15 22:10:04,266 - INFO - Progress update: 90.67%
+2025-07-15 22:10:04,778 - INFO - GUI progress set to 95%
+2025-07-15 22:10:04,779 - INFO - Progress update: 95.28%
+2025-07-15 22:10:05,292 - INFO - GUI progress set to 98%
+2025-07-15 22:10:05,293 - INFO - Progress update: 98.85%
+2025-07-15 22:10:05,388 - INFO - GUI progress set to 99%
+2025-07-15 22:10:05,389 - INFO - Progress update: 99.99%
+2025-07-15 22:10:05,544 - INFO - GUI progress set to 100%
+2025-07-15 22:10:05,545 - INFO - Progress update: 100.00%
+2025-07-15 22:10:05,545 - INFO - GUI progress set to 100%
+2025-07-15 22:10:05,546 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mp4
+2025-07-15 22:10:16,992 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:10:16,994 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628216.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:10:17,004 - INFO - GUI progress set to 0%
+2025-07-15 22:10:17,005 - INFO - Progress update: 0.00%
+2025-07-15 22:10:17,545 - INFO - GUI progress set to 1%
+2025-07-15 22:10:17,545 - INFO - Progress update: 1.22%
+2025-07-15 22:10:18,062 - INFO - GUI progress set to 5%
+2025-07-15 22:10:18,063 - INFO - Progress update: 5.83%
+2025-07-15 22:10:18,579 - INFO - GUI progress set to 9%
+2025-07-15 22:10:18,579 - INFO - Progress update: 9.40%
+2025-07-15 22:10:19,095 - INFO - GUI progress set to 14%
+2025-07-15 22:10:19,096 - INFO - Progress update: 14.01%
+2025-07-15 22:10:19,612 - INFO - GUI progress set to 18%
+2025-07-15 22:10:19,613 - INFO - Progress update: 18.61%
+2025-07-15 22:10:20,130 - INFO - GUI progress set to 22%
+2025-07-15 22:10:20,131 - INFO - Progress update: 22.18%
+2025-07-15 22:10:20,650 - INFO - GUI progress set to 26%
+2025-07-15 22:10:20,651 - INFO - Progress update: 26.81%
+2025-07-15 22:10:21,176 - INFO - GUI progress set to 31%
+2025-07-15 22:10:21,177 - INFO - Progress update: 31.42%
+2025-07-15 22:10:21,689 - INFO - GUI progress set to 36%
+2025-07-15 22:10:21,690 - INFO - Progress update: 36.04%
+2025-07-15 22:10:22,207 - INFO - GUI progress set to 39%
+2025-07-15 22:10:22,208 - INFO - Progress update: 39.61%
+2025-07-15 22:10:22,724 - INFO - GUI progress set to 44%
+2025-07-15 22:10:22,725 - INFO - Progress update: 44.22%
+2025-07-15 22:10:23,238 - INFO - GUI progress set to 48%
+2025-07-15 22:10:23,239 - INFO - Progress update: 48.83%
+2025-07-15 22:10:23,751 - INFO - GUI progress set to 52%
+2025-07-15 22:10:23,752 - INFO - Progress update: 52.39%
+2025-07-15 22:10:24,268 - INFO - GUI progress set to 56%
+2025-07-15 22:10:24,269 - INFO - Progress update: 56.99%
+2025-07-15 22:10:24,784 - INFO - GUI progress set to 61%
+2025-07-15 22:10:24,785 - INFO - Progress update: 61.60%
+2025-07-15 22:10:25,300 - INFO - GUI progress set to 65%
+2025-07-15 22:10:25,300 - INFO - Progress update: 65.16%
+2025-07-15 22:10:25,813 - INFO - GUI progress set to 69%
+2025-07-15 22:10:25,813 - INFO - Progress update: 69.74%
+2025-07-15 22:10:26,326 - INFO - GUI progress set to 74%
+2025-07-15 22:10:26,327 - INFO - Progress update: 74.38%
+2025-07-15 22:10:26,844 - INFO - GUI progress set to 79%
+2025-07-15 22:10:26,845 - INFO - Progress update: 79.00%
+2025-07-15 22:10:27,360 - INFO - GUI progress set to 82%
+2025-07-15 22:10:27,362 - INFO - Progress update: 82.55%
+2025-07-15 22:10:27,875 - INFO - GUI progress set to 87%
+2025-07-15 22:10:27,875 - INFO - Progress update: 87.17%
+2025-07-15 22:10:28,391 - INFO - GUI progress set to 90%
+2025-07-15 22:10:28,392 - INFO - Progress update: 90.73%
+2025-07-15 22:10:28,906 - INFO - GUI progress set to 95%
+2025-07-15 22:10:28,906 - INFO - Progress update: 95.33%
+2025-07-15 22:10:29,423 - INFO - GUI progress set to 99%
+2025-07-15 22:10:29,425 - INFO - Progress update: 99.96%
+2025-07-15 22:10:29,450 - INFO - GUI progress set to 99%
+2025-07-15 22:10:29,452 - INFO - Progress update: 99.99%
+2025-07-15 22:10:29,616 - INFO - GUI progress set to 100%
+2025-07-15 22:10:29,617 - INFO - Progress update: 100.00%
+2025-07-15 22:10:29,618 - INFO - GUI progress set to 100%
+2025-07-15 22:10:29,618 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628216.mp4
+2025-07-15 22:11:35,643 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:11:35,644 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628295.mp4 with AV1 (av1_nvenc)...
+2025-07-15 22:11:35,650 - INFO - GUI progress set to 0%
+2025-07-15 22:11:35,652 - INFO - Progress update: 0.00%
+2025-07-15 22:11:36,193 - INFO - GUI progress set to 1%
+2025-07-15 22:11:36,194 - INFO - Progress update: 1.19%
+2025-07-15 22:11:36,708 - INFO - GUI progress set to 5%
+2025-07-15 22:11:36,709 - INFO - Progress update: 5.81%
+2025-07-15 22:11:37,222 - INFO - GUI progress set to 9%
+2025-07-15 22:11:37,223 - INFO - Progress update: 9.37%
+2025-07-15 22:11:37,738 - INFO - GUI progress set to 13%
+2025-07-15 22:11:37,738 - INFO - Progress update: 13.99%
+2025-07-15 22:11:38,254 - INFO - GUI progress set to 18%
+2025-07-15 22:11:38,255 - INFO - Progress update: 18.60%
+2025-07-15 22:11:38,770 - INFO - GUI progress set to 22%
+2025-07-15 22:11:38,771 - INFO - Progress update: 22.16%
+2025-07-15 22:11:39,287 - INFO - GUI progress set to 26%
+2025-07-15 22:11:39,288 - INFO - Progress update: 26.78%
+2025-07-15 22:11:39,802 - INFO - GUI progress set to 31%
+2025-07-15 22:11:39,803 - INFO - Progress update: 31.40%
+2025-07-15 22:11:40,318 - INFO - GUI progress set to 34%
+2025-07-15 22:11:40,319 - INFO - Progress update: 34.96%
+2025-07-15 22:11:40,834 - INFO - GUI progress set to 39%
+2025-07-15 22:11:40,836 - INFO - Progress update: 39.58%
+2025-07-15 22:11:41,351 - INFO - GUI progress set to 44%
+2025-07-15 22:11:41,352 - INFO - Progress update: 44.20%
+2025-07-15 22:11:41,853 - INFO - GUI progress set to 47%
+2025-07-15 22:11:41,853 - INFO - Progress update: 47.74%
+2025-07-15 22:11:42,370 - INFO - GUI progress set to 52%
+2025-07-15 22:11:42,371 - INFO - Progress update: 52.36%
+2025-07-15 22:11:42,889 - INFO - GUI progress set to 56%
+2025-07-15 22:11:42,889 - INFO - Progress update: 56.96%
+2025-07-15 22:11:43,404 - INFO - GUI progress set to 61%
+2025-07-15 22:11:43,404 - INFO - Progress update: 61.59%
+2025-07-15 22:11:43,922 - INFO - GUI progress set to 65%
+2025-07-15 22:11:43,923 - INFO - Progress update: 65.16%
+2025-07-15 22:11:44,439 - INFO - GUI progress set to 69%
+2025-07-15 22:11:44,440 - INFO - Progress update: 69.74%
+2025-07-15 22:11:44,957 - INFO - GUI progress set to 74%
+2025-07-15 22:11:44,957 - INFO - Progress update: 74.38%
+2025-07-15 22:11:45,472 - INFO - GUI progress set to 79%
+2025-07-15 22:11:45,473 - INFO - Progress update: 79.00%
+2025-07-15 22:11:45,988 - INFO - GUI progress set to 82%
+2025-07-15 22:11:45,988 - INFO - Progress update: 82.55%
+2025-07-15 22:11:46,501 - INFO - GUI progress set to 87%
+2025-07-15 22:11:46,501 - INFO - Progress update: 87.17%
+2025-07-15 22:11:47,016 - INFO - GUI progress set to 90%
+2025-07-15 22:11:47,017 - INFO - Progress update: 90.73%
+2025-07-15 22:11:47,534 - INFO - GUI progress set to 95%
+2025-07-15 22:11:47,536 - INFO - Progress update: 95.34%
+2025-07-15 22:11:48,051 - INFO - GUI progress set to 99%
+2025-07-15 22:11:48,052 - INFO - Progress update: 99.97%
+2025-07-15 22:11:48,068 - INFO - GUI progress set to 99%
+2025-07-15 22:11:48,069 - INFO - Progress update: 99.99%
+2025-07-15 22:11:48,225 - INFO - GUI progress set to 100%
+2025-07-15 22:11:48,225 - INFO - Progress update: 100.00%
+2025-07-15 22:11:48,226 - INFO - GUI progress set to 100%
+2025-07-15 22:11:48,226 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1752628295.mp4
+2025-07-15 22:11:57,002 - INFO - Using preset 'fast' for encoder 'av1_nvenc'
+2025-07-15 22:11:57,003 - INFO - Converting C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool/Google Workspace - Introducing Google Vids.mp4 to C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mkv with AV1 (av1_nvenc)...
+2025-07-15 22:11:57,009 - INFO - GUI progress set to 0%
+2025-07-15 22:11:57,010 - INFO - Progress update: 0.00%
+2025-07-15 22:11:57,554 - INFO - GUI progress set to 1%
+2025-07-15 22:11:57,554 - INFO - Progress update: 1.22%
+2025-07-15 22:11:58,070 - INFO - GUI progress set to 5%
+2025-07-15 22:11:58,071 - INFO - Progress update: 5.84%
+2025-07-15 22:11:58,571 - INFO - GUI progress set to 9%
+2025-07-15 22:11:58,572 - INFO - Progress update: 9.39%
+2025-07-15 22:11:59,090 - INFO - GUI progress set to 14%
+2025-07-15 22:11:59,091 - INFO - Progress update: 14.01%
+2025-07-15 22:11:59,603 - INFO - GUI progress set to 18%
+2025-07-15 22:11:59,604 - INFO - Progress update: 18.61%
+2025-07-15 22:12:00,121 - INFO - GUI progress set to 22%
+2025-07-15 22:12:00,121 - INFO - Progress update: 22.18%
+2025-07-15 22:12:00,641 - INFO - GUI progress set to 26%
+2025-07-15 22:12:00,643 - INFO - Progress update: 26.81%
+2025-07-15 22:12:01,155 - INFO - GUI progress set to 31%
+2025-07-15 22:12:01,156 - INFO - Progress update: 31.42%
+2025-07-15 22:12:01,673 - INFO - GUI progress set to 36%
+2025-07-15 22:12:01,673 - INFO - Progress update: 36.03%
+2025-07-15 22:12:02,191 - INFO - GUI progress set to 39%
+2025-07-15 22:12:02,193 - INFO - Progress update: 39.60%
+2025-07-15 22:12:02,705 - INFO - GUI progress set to 44%
+2025-07-15 22:12:02,706 - INFO - Progress update: 44.22%
+2025-07-15 22:12:03,221 - INFO - GUI progress set to 48%
+2025-07-15 22:12:03,222 - INFO - Progress update: 48.84%
+2025-07-15 22:12:03,740 - INFO - GUI progress set to 52%
+2025-07-15 22:12:03,741 - INFO - Progress update: 52.39%
+2025-07-15 22:12:04,258 - INFO - GUI progress set to 57%
+2025-07-15 22:12:04,259 - INFO - Progress update: 57.01%
+2025-07-15 22:12:04,760 - INFO - GUI progress set to 61%
+2025-07-15 22:12:04,760 - INFO - Progress update: 61.61%
+2025-07-15 22:12:05,276 - INFO - GUI progress set to 66%
+2025-07-15 22:12:05,276 - INFO - Progress update: 66.22%
+2025-07-15 22:12:05,793 - INFO - GUI progress set to 69%
+2025-07-15 22:12:05,793 - INFO - Progress update: 69.74%
+2025-07-15 22:12:06,312 - INFO - GUI progress set to 74%
+2025-07-15 22:12:06,313 - INFO - Progress update: 74.38%
+2025-07-15 22:12:06,830 - INFO - GUI progress set to 79%
+2025-07-15 22:12:06,831 - INFO - Progress update: 79.00%
+2025-07-15 22:12:07,346 - INFO - GUI progress set to 82%
+2025-07-15 22:12:07,347 - INFO - Progress update: 82.55%
+2025-07-15 22:12:07,865 - INFO - GUI progress set to 87%
+2025-07-15 22:12:07,865 - INFO - Progress update: 87.17%
+2025-07-15 22:12:08,368 - INFO - GUI progress set to 90%
+2025-07-15 22:12:08,369 - INFO - Progress update: 90.73%
+2025-07-15 22:12:08,898 - INFO - GUI progress set to 95%
+2025-07-15 22:12:08,899 - INFO - Progress update: 95.34%
+2025-07-15 22:12:09,414 - INFO - GUI progress set to 99%
+2025-07-15 22:12:09,415 - INFO - Progress update: 99.98%
+2025-07-15 22:12:09,426 - INFO - GUI progress set to 99%
+2025-07-15 22:12:09,428 - INFO - Progress update: 99.99%
+2025-07-15 22:12:09,574 - INFO - GUI progress set to 100%
+2025-07-15 22:12:09,575 - INFO - Progress update: 100.00%
+2025-07-15 22:12:09,575 - INFO - GUI progress set to 100%
+2025-07-15 22:12:09,576 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted.mkv
