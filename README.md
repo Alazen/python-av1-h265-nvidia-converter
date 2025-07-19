@@ -1,6 +1,6 @@
 # AV1 Batch Converter
 
-This application is a PySide6 GUI that batches any video format FFmpeg can open (MP4, MKV, etc.) and converts it to 4K AV1 using the NVIDIA `av1_nvenc` encoder. It was designed for the RTX&nbsp;4060&nbsp;Ti but will run on any Ada&nbsp;Lovelace GPU with an AV1-capable NVENC block. Two progress bars and a live log show encoding in real time so the interface stays responsive even when hundreds of files are queued.
+This application is a PySide6 GUI that batches any video format FFmpeg can open (MP4, MKV, etc.) and converts it to 4K AV1 using the NVIDIA `av1_nvenc` encoder. It will run on any Ada&nbsp;Lovelace GPU with an AV1-capable NVENC block. Two progress bars and a live log show encoding in real time so the interface stays responsive even when hundreds of files are queued.
 
 ## Requirements
 
