@@ -51,26 +51,41 @@ class ConversionThread(QThread):
                 if os.path.exists(output_file):
                     output_file = os.path.join(output_dir, f"{base_name}_converted_{int(time.time())}.{self.container.lower()}")
 
-                # Select encoder and map preset for NVENC
-                if self.codec == "H.265":
-                    encoder = 'hevc_nvenc' if has_nvenc else 'libx265'
-                elif self.codec == "AV1":
-                    encoder = 'av1_nvenc' if has_nvenc else 'libsvtav1'
-                
-                mapped_preset = self.map_preset_for_encoder(self.preset, encoder, has_nvenc)
-                self.log_message.emit(f"Using preset '{mapped_preset}' for encoder '{encoder}'", "black")
-
-                # Build FFmpeg command with progress output
-                cmd = ['ffmpeg', '-i', file]
+                probe = ffmpeg.probe(file)
+                video_codec = next((s['codec_name'] for s in probe['streams'] if s['codec_type'] == 'video'), None)
+                output_codec = 'av1' if self.codec == "AV1" else 'hevc'
                 crop = self.crop_settings.get(file)
-                if crop is not None:
-                    start, end = crop
-                    cmd.extend(['-ss', str(start), '-t', str(end - start)])
-                cmd.extend(['-preset', mapped_preset, '-b:v', self.bitrate + 'k', '-c:a', 'copy',
-                       '-progress', 'pipe:2'])  # Force progress to stderr for parsing
-                cmd.extend(['-c:v', encoder, output_file])
 
-                self.log_message.emit(f"Converting {file} to {output_file} with {self.codec} ({encoder})...", "black")
+                cmd = ['ffmpeg']
+                if video_codec == output_codec:
+                    if crop is not None:
+                        start, end = crop
+                        cmd.extend(['-ss', str(start), '-i', file, '-t', str(end - start)])
+                    else:
+                        cmd.extend(['-i', file])
+                    cmd.extend(['-c', 'copy', '-progress', 'pipe:2', output_file])
+                else:
+                    if video_codec == 'av1' and has_nvenc:
+                        cmd.extend(['-hwaccel', 'nvdec'])
+                    if crop is not None:
+                        start, end = crop
+                        cmd.extend(['-ss', str(start)])
+                    cmd.extend(['-i', file])
+                    if crop is not None:
+                        cmd.extend(['-t', str(end - start)])
+                    # Select encoder and map preset for NVENC
+                    if self.codec == "H.265":
+                        encoder = 'hevc_nvenc' if has_nvenc else 'libx265'
+                    elif self.codec == "AV1":
+                        encoder = 'av1_nvenc' if has_nvenc else 'libsvtav1'
+                    
+                    mapped_preset = self.map_preset_for_encoder(self.preset, encoder, has_nvenc)
+                    self.log_message.emit(f"Using preset '{mapped_preset}' for encoder '{encoder}'", "black")
+
+                    cmd.extend(['-preset', mapped_preset, '-b:v', self.bitrate + 'k', '-c:a', 'copy',
+                           '-progress', 'pipe:2', '-c:v', encoder, output_file])
+
+                self.log_message.emit(f"Converting {file} to {output_file} with {self.codec} ({encoder if encoder else 'copy'})...", "black")
 
                 ff = FfmpegProgress(cmd)
                 self.process = ff.process  # For cancellation
