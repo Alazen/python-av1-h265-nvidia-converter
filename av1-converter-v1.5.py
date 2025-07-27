@@ -20,7 +20,7 @@ class ConversionThread(QThread):
     log_message = pyqtSignal(str, str)  # message, color
     finished = pyqtSignal()
 
-    def __init__(self, files, codec, container, bitrate, preset, custom_output_dir, parent=None):
+    def __init__(self, files, codec, container, bitrate, preset, custom_output_dir, crop_settings={}, parent=None):
         super().__init__(parent)
         self.files = files
         self.codec = codec
@@ -28,11 +28,12 @@ class ConversionThread(QThread):
         self.bitrate = bitrate
         self.preset = preset
         self.custom_output_dir = custom_output_dir
+        self.crop_settings = crop_settings
         self._is_running = True
         self.process = None
 
     def run(self):
-        has_nvenc = self.check_nvenc()
+        has_nvenc = ConversionThread.check_nvenc()
         encoder = None
         for file in self.files:
             if not self._is_running:
@@ -60,8 +61,13 @@ class ConversionThread(QThread):
                 self.log_message.emit(f"Using preset '{mapped_preset}' for encoder '{encoder}'", "black")
 
                 # Build FFmpeg command with progress output
-                cmd = ['ffmpeg', '-i', file, '-preset', mapped_preset, '-b:v', self.bitrate + 'k', '-c:a', 'copy',
-                       '-progress', 'pipe:2']  # Force progress to stderr for parsing
+                cmd = ['ffmpeg', '-i', file]
+                crop = self.crop_settings.get(file)
+                if crop is not None:
+                    start, end = crop
+                    cmd.extend(['-ss', str(start), '-t', str(end - start)])
+                cmd.extend(['-preset', mapped_preset, '-b:v', self.bitrate + 'k', '-c:a', 'copy',
+                       '-progress', 'pipe:2'])  # Force progress to stderr for parsing
                 cmd.extend(['-c:v', encoder, output_file])
 
                 self.log_message.emit(f"Converting {file} to {output_file} with {self.codec} ({encoder})...", "black")
@@ -92,7 +98,8 @@ class ConversionThread(QThread):
             self.process.terminate()
             self.process.wait()
 
-    def check_nvenc(self):
+    @staticmethod
+    def check_nvenc():
         try:
             output = subprocess.check_output(['ffmpeg', '-encoders']).decode()
             return 'nvenc' in output.lower()
@@ -140,7 +147,7 @@ class DragDropListWidget(QListWidget):
                 if self.is_video_file(file_path):
                     added_files.append(file_path)
             if added_files:
-                self.parent().parent().add_dropped_files(added_files)  # Call parent's method to add files
+                self.window().add_dropped_files(added_files)  # Call main window's method to add files
 
     def is_video_file(self, file_path):
         valid_extensions = ('.mp4', '.mkv', '.avi', '.mov')
@@ -154,6 +161,7 @@ class VideoConverterApp(QMainWindow):
         self.files = []
         self.conversion_thread = None
         self.custom_output_dir = None
+        self.crop_settings = {}
 
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
@@ -179,6 +187,23 @@ class VideoConverterApp(QMainWindow):
         self.file_list.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.file_list.customContextMenuRequested.connect(self.remove_file)
         layout.addWidget(self.file_list)
+
+        # Crop Inputs
+        self.crop_group = QGroupBox("Crop Video Duration")
+        crop_layout = QHBoxLayout()
+        crop_layout.addWidget(QLabel("Start:"))
+        self.start_edit = QLineEdit("00:00:00")
+        self.start_edit.setEnabled(False)
+        crop_layout.addWidget(self.start_edit)
+        crop_layout.addWidget(QLabel("End:"))
+        self.end_edit = QLineEdit("00:00:00")
+        self.end_edit.setEnabled(False)
+        crop_layout.addWidget(self.end_edit)
+        self.crop_group.setLayout(crop_layout)
+        layout.addWidget(self.crop_group)
+        self.file_list.itemSelectionChanged.connect(self.update_crop_inputs)
+        self.start_edit.textChanged.connect(self.update_crop_settings)
+        self.end_edit.textChanged.connect(self.update_crop_settings)
 
         # Codec Selection
         codec_group = QGroupBox("Video Codec")
@@ -257,6 +282,84 @@ class VideoConverterApp(QMainWindow):
         self.log_text.setReadOnly(True)
         layout.addWidget(self.log_text)
 
+    def seconds_to_time(self, sec):
+        sec = int(sec)
+        hours = sec // 3600
+        minutes = (sec % 3600) // 60
+        seconds = sec % 60
+        return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+    def parse_time(self, time_str):
+        try:
+            parts = time_str.split(':')
+            if len(parts) != 3:
+                return None
+            h, m, s = map(int, parts)
+            if h < 0 or m < 0 or s < 0 or m >= 60 or s >= 60:
+                return None
+            return h * 3600 + m * 60 + s
+        except:
+            return None
+
+    def update_crop_inputs(self):
+        selected = self.file_list.selectedItems()
+        if len(selected) != 1:
+            self.start_edit.setEnabled(False)
+            self.end_edit.setEnabled(False)
+            self.start_edit.setText("00:00:00")
+            self.end_edit.setText("00:00:00")
+            return
+        file = selected[0].text()
+        if file not in self.files:
+            return
+        try:
+            probe = ffmpeg.probe(file)
+            duration = float(probe['format']['duration'])
+            if file in self.crop_settings:
+                start, end = self.crop_settings[file]
+                start_str = self.seconds_to_time(start)
+                end_str = self.seconds_to_time(end)
+            else:
+                start_str = "00:00:00"
+                end_str = self.seconds_to_time(duration)
+            self.start_edit.setText(start_str)
+            self.end_edit.setText(end_str)
+            self.start_edit.setEnabled(True)
+            self.end_edit.setEnabled(True)
+        except Exception as e:
+            self.log_message(f"Error getting duration for {file}: {e}", "red")
+            self.start_edit.setEnabled(False)
+            self.end_edit.setEnabled(False)
+
+    def update_crop_settings(self):
+        if not self.start_edit.isEnabled():
+            return
+        selected = self.file_list.selectedItems()
+        if len(selected) != 1:
+            return
+        file = selected[0].text()
+        start_str = self.start_edit.text()
+        end_str = self.end_edit.text()
+        start = self.parse_time(start_str)
+        end = self.parse_time(end_str)
+        if start is None or end is None or start >= end:
+            return
+        try:
+            probe = ffmpeg.probe(file)
+            duration = float(probe['format']['duration'])
+            if end > duration:
+                end = int(duration)
+                self.end_edit.setText(self.seconds_to_time(end))
+            if start > duration:
+                start = 0
+                self.start_edit.setText("00:00:00")
+            if start >= end:
+                return
+            self.crop_settings[file] = (start, end)
+            self.update_estimate()
+        except Exception as e:
+            self.log_message(f"Error getting duration for {file}: {e}", "red")
+
     def add_dropped_files(self, files):
         new_files = [f for f in files if f not in self.files]
         self.files.extend(new_files)
@@ -273,14 +376,18 @@ class VideoConverterApp(QMainWindow):
 
     def clear_list(self):
         self.files.clear()
+        self.crop_settings.clear()
         self.update_file_list()
         self.update_estimate()
 
     def remove_file(self, position):
         item = self.file_list.itemAt(position)
         if item:
+            file = item.text()
             index = self.file_list.row(item)
             del self.files[index]
+            if file in self.crop_settings:
+                del self.crop_settings[file]
             self.update_file_list()
             self.update_estimate()
 
@@ -306,13 +413,18 @@ class VideoConverterApp(QMainWindow):
         bitrate = self.get_bitrate()
         preset = self.preset_combo.currentText()
         codec = self.get_codec()
-        has_nvenc = ConversionThread.check_nvenc(self)  # Static call to check NVENC
+        has_nvenc = ConversionThread.check_nvenc()  # Static call to check NVENC
         if not bitrate:
             return
         for file in self.files:
             try:
                 probe = ffmpeg.probe(file)
-                duration = float(probe['format']['duration'])
+                full_duration = float(probe['format']['duration'])
+                if file in self.crop_settings:
+                    start, end = self.crop_settings[file]
+                    duration = end - start
+                else:
+                    duration = full_duration
                 audio_bitrate = next((float(s['bit_rate']) for s in probe['streams'] if s['codec_type'] == 'audio'), 128000) / 1000  # Default 128kbps
                 
                 # Size estimate
@@ -375,7 +487,7 @@ class VideoConverterApp(QMainWindow):
 
         self.conversion_thread = ConversionThread(
             self.files, self.get_codec(), self.get_container(), str(bitrate), 
-            self.preset_combo.currentText(), self.custom_output_dir
+            self.preset_combo.currentText(), self.custom_output_dir, self.crop_settings
         )
         self.conversion_thread.progress_updated.connect(self.update_progress)
         self.conversion_thread.log_message.connect(self.log_message)
