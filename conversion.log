@@ -19339,3 +19339,716 @@ Conversion failed!
 2025-07-27 13:15:29,447 - INFO - Progress update: 100.00%
 2025-07-27 13:15:29,448 - INFO - GUI progress set to 100%
 2025-07-27 13:15:29,448 - INFO - Completed: C:/Users/gabip/Videos/NVIDIA/Perfect World International\Perfect World International 2025.07.17 - 20.08.30.02_converted_1753632922.mp4
+2025-08-08 20:08:37,396 - INFO - Added 1 dropped file(s).
+2025-08-08 20:09:18,021 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:09:18,023 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:09:18,178 - INFO - Error converting C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv: Error running command ['ffmpeg', '-hide_banner', '-nostats', '-i', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv', '-map', '0', '-movflags', '+faststart', '-c', 'copy', '-progress', 'pipe:2', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH\\Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH_converted.mp4']: [matroska,webm @ 000001cf333dfb00] Could not find codec parameters for stream 2 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[matroska,webm @ 000001cf333dfb00] Could not find codec parameters for stream 3 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, matroska,webm, from 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv':
+Metadata:
+creation_time   : 2025-05-03T12:29:04.000000Z
+ENCODER         : Lavf61.1.100
+Duration: 00:50:19.94, start: -0.007000, bitrate: 3216 kb/s
+Stream #0:0: Video: av1 (libaom-av1) (Main), yuv420p10le(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+Metadata:
+BPS             : 2998955
+DURATION        : 00:50:17.932000000
+NUMBER_OF_FRAMES: 72358
+NUMBER_OF_BYTES : 1131330328
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:1(eng): Audio: opus, 48000 Hz, 5.1, fltp (default)
+Metadata:
+BPS             : 202392
+DURATION        : 00:50:19.941000000
+NUMBER_OF_FRAMES: 150997
+NUMBER_OF_BYTES : 76401620
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:2(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (forced)
+Metadata:
+BPS             : 0
+DURATION        : 00:00:00.000000000
+NUMBER_OF_FRAMES: 0
+NUMBER_OF_BYTES : 0
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:3(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (hearing impaired)
+Metadata:
+BPS             : 34044
+DURATION        : 00:50:07.296000000
+NUMBER_OF_FRAMES: 1212
+NUMBER_OF_BYTES : 12797648
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream mapping:
+Stream #0:0 -> #0:0 (copy)
+Stream #0:1 -> #0:1 (copy)
+Stream #0:2 -> #0:2 (copy)
+Stream #0:3 -> #0:3 (copy)
+[mp4 @ 000001cf3588a680] track 1: codec frame size is not set
+[mp4 @ 000001cf3588a680] Could not find tag for codec hdmv_pgs_subtitle in stream #2, codec not currently supported in container
+[out#0/mp4 @ 000001cf3588cd80] Could not write header (incorrect codec parameters ?): Invalid argument
+Conversion failed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2025-08-08 20:09:35,106 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:09:35,112 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:09:35,209 - INFO - Error converting C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv: Error running command ['ffmpeg', '-hide_banner', '-nostats', '-i', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv', '-map', '0', '-movflags', '+faststart', '-c', 'copy', '-progress', 'pipe:2', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH\\Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH_converted.mp4']: [matroska,webm @ 000002a1bb7efb00] Could not find codec parameters for stream 2 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[matroska,webm @ 000002a1bb7efb00] Could not find codec parameters for stream 3 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, matroska,webm, from 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv':
+Metadata:
+creation_time   : 2025-05-03T12:29:04.000000Z
+ENCODER         : Lavf61.1.100
+Duration: 00:50:19.94, start: -0.007000, bitrate: 3216 kb/s
+Stream #0:0: Video: av1 (libaom-av1) (Main), yuv420p10le(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+Metadata:
+BPS             : 2998955
+DURATION        : 00:50:17.932000000
+NUMBER_OF_FRAMES: 72358
+NUMBER_OF_BYTES : 1131330328
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:1(eng): Audio: opus, 48000 Hz, 5.1, fltp (default)
+Metadata:
+BPS             : 202392
+DURATION        : 00:50:19.941000000
+NUMBER_OF_FRAMES: 150997
+NUMBER_OF_BYTES : 76401620
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:2(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (forced)
+Metadata:
+BPS             : 0
+DURATION        : 00:00:00.000000000
+NUMBER_OF_FRAMES: 0
+NUMBER_OF_BYTES : 0
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:3(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (hearing impaired)
+Metadata:
+BPS             : 34044
+DURATION        : 00:50:07.296000000
+NUMBER_OF_FRAMES: 1212
+NUMBER_OF_BYTES : 12797648
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream mapping:
+Stream #0:0 -> #0:0 (copy)
+Stream #0:1 -> #0:1 (copy)
+Stream #0:2 -> #0:2 (copy)
+Stream #0:3 -> #0:3 (copy)
+[mp4 @ 000002a1bdc7a680] track 1: codec frame size is not set
+[mp4 @ 000002a1bdc7a680] Could not find tag for codec hdmv_pgs_subtitle in stream #2, codec not currently supported in container
+[out#0/mp4 @ 000002a1bdc7cd80] Could not write header (incorrect codec parameters ?): Invalid argument
+Conversion failed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2025-08-08 20:09:51,368 - INFO - Selected encoder: hevc_nvenc
+2025-08-08 20:09:51,371 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:09:52,091 - INFO - Error converting C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv: Error running command ['ffmpeg', '-hide_banner', '-nostats', '-i', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv', '-map', '0', '-movflags', '+faststart', '-c:v', 'hevc_nvenc', '-preset', 'p1', '-rc:v', 'vbr', '-b:v', '2000k', '-maxrate', '2000k', '-bufsize', '4000k', '-c:a', 'copy', '-c:s', 'copy', '-progress', 'pipe:2', 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH\\Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH_converted.mp4']: [matroska,webm @ 000001e8d2fe13c0] Could not find codec parameters for stream 2 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[matroska,webm @ 000001e8d2fe13c0] Could not find codec parameters for stream 3 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, matroska,webm, from 'C:/Users/gabip/Videos/Fringe.Season.1.Bluray.1080p.AV1.OPUS.5.1-UH/Fringe.S01e17.Bad.Dreams.Bluray.1080p.AV1.OPUS.5.1-UH.mkv':
+Metadata:
+creation_time   : 2025-05-03T12:29:04.000000Z
+ENCODER         : Lavf61.1.100
+Duration: 00:50:19.94, start: -0.007000, bitrate: 3216 kb/s
+Stream #0:0: Video: av1 (libaom-av1) (Main), yuv420p10le(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+Metadata:
+BPS             : 2998955
+DURATION        : 00:50:17.932000000
+NUMBER_OF_FRAMES: 72358
+NUMBER_OF_BYTES : 1131330328
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:1(eng): Audio: opus, 48000 Hz, 5.1, fltp (default)
+Metadata:
+BPS             : 202392
+DURATION        : 00:50:19.941000000
+NUMBER_OF_FRAMES: 150997
+NUMBER_OF_BYTES : 76401620
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:2(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (forced)
+Metadata:
+BPS             : 0
+DURATION        : 00:00:00.000000000
+NUMBER_OF_FRAMES: 0
+NUMBER_OF_BYTES : 0
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream #0:3(eng): Subtitle: hdmv_pgs_subtitle (pgssub) (hearing impaired)
+Metadata:
+BPS             : 34044
+DURATION        : 00:50:07.296000000
+NUMBER_OF_FRAMES: 1212
+NUMBER_OF_BYTES : 12797648
+_STATISTICS_WRITING_APP: mkvmerge v92.0 ('Everglow') 64-bit
+_STATISTICS_WRITING_DATE_UTC: 2025-05-03 12:29:04
+_STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream mapping:
+Stream #0:0 -> #0:0 (av1 (libaom-av1) -> hevc (hevc_nvenc))
+Stream #0:1 -> #0:1 (copy)
+Stream #0:2 -> #0:2 (copy)
+Stream #0:3 -> #0:3 (copy)
+Press [q] to stop, [?] for help
+[mp4 @ 000001e8d5564700] track 1: codec frame size is not set
+[mp4 @ 000001e8d5564700] Could not find tag for codec hdmv_pgs_subtitle in stream #2, codec not currently supported in container
+[out#0/mp4 @ 000001e8d2ff5b00] Could not write header (incorrect codec parameters ?): Invalid argument
+[vf#0:0 @ 000001e8d30ae340] Error sending frames to consumers: Invalid argument
+[vf#0:0 @ 000001e8d30ae340] Task finished with error code: -22 (Invalid argument)
+[vf#0:0 @ 000001e8d30ae340] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 000001e8d2ff5b00] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A
+frame=0
+fps=0.00
+stream_0_0_q=0.0
+bitrate=N/A
+total_size=0
+out_time_us=N/A
+out_time_ms=N/A
+out_time=N/A
+dup_frames=0
+drop_frames=0
+speed=N/A
+progress=end
+Conversion failed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2025-08-08 20:10:36,770 - INFO - Added 1 dropped file(s).
+2025-08-08 20:10:41,586 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:10:41,587 - INFO - Using preset 'p6' (mapped from 'medium')
+2025-08-08 20:10:49,026 - INFO - Conversion cancelled by user.
+2025-08-08 20:10:55,787 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:10:55,789 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:11:08,469 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1754694655.mp4
+2025-08-08 20:11:12,444 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:11:12,444 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:11:25,640 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1754694672.mp4
+2025-08-08 20:11:47,112 - INFO - Selected encoder: av1_nvenc
+2025-08-08 20:11:47,113 - INFO - Using preset 'p1' (mapped from 'ultrafast')
+2025-08-08 20:11:59,753 - INFO - Completed: C:/Users/gabip/Documents/XuanZhi9/Applications/APK Tool\Google Workspace - Introducing Google Vids_converted_1754694707.mp4
